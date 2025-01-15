@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>dir="auto" example</title>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div
+                style="
+                    position: sticky;
+                    top: 0;
+                    background-color: white;
+                    padding: 1px 10px;
+                    font-family: 'Courier New', Courier, monospace;
+                "
+            >
+                <h3>
+                    Правильно (RTL):&nbsp;&nbsp;
+                    <span dir="rtl">لوريم إيبسوم(Lorem Ipsum)</span>
+                </h3>
+                <h3>
+                    НЕ правильно (LTR):
+                    <span dir="ltr">لوريم إيبسوم(Lorem Ipsum)</span>
+                </h3>
+            </div>
+            <div
+                dir="auto"
+                style="background-color: antiquewhite; padding: 10px"
+            >
+                <h1>
+                    dir="auto" у родителя, но в прямых потомках нет арабских
+                    символов
+                </h1>
+                <hr />
+                <h2>Textarea</h2>
+                <textarea rows="10" cols="60">
+لوريم إيبسوم(Lorem Ipsum)
+просто текст на русском</textarea
+                >
+                <h2>Input</h2>
+                <input
+                    type="text"
+                    style="width: 1000px"
+                    value="لوريم إيبسوم(Lorem Ipsum)"
+                />
+                <h2>Div</h2>
+                <div>لوريم إيبسوم(Lorem Ipsum)</div>
+                <h2>Span</h2>
+                <span>لوريم إيبسوم(Lorem Ipsum)</span>
+                <h2>Table</h2>
+                <table border="1" style="width: 800px">
+                    <tr>
+                        <td>foo</td>
+                        <td>لوريم إيبسوم(Lorem Ipsum)</td>
+                    </tr>
+                    <tr>
+                        <td>لوريم إيبسوم(Lorem Ipsum)</td>
+                        <td>foo</td>
+                    </tr>
+                    <tr>
+                        <td>لوريم إيبسوم(Lorem Ipsum)</td>
+                        <td>لوريم إيبسوم(Lorem Ipsum)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- ############################################################################### -->
+
+            <div dir="auto" style="background-color: azure; padding: 10px">
+                <h1>
+                    dir="auto" у родителя и есть потомок с арабскими символами
+                    но он не первый
+                </h1>
+                لوريم إيبسوم(Lorem Ipsum)
+                <hr />
+                <h2>Textarea</h2>
+                <textarea rows="10" cols="60">
+لوريم إيبسوم(Lorem Ipsum)
+просто текст на русском</textarea
+                >
+                <h2>Input</h2>
+                <input
+                    type="text"
+                    style="width: 1000px"
+                    value="لوريم إيبسوم(Lorem Ipsum)"
+                />
+                <h2>Div</h2>
+                <div>لوريم إيبسوم(Lorem Ipsum)</div>
+                <h2>Span</h2>
+                <span>لوريم إيبسوم(Lorem Ipsum)</span>
+                <h2>Table</h2>
+                <table border="1" style="width: 800px">
+                    <tr>
+                        <td>foo</td>
+                        <td>لوريم إيبسوم(Lorem Ipsum)</td>
+                    </tr>
+                    <tr>
+                        <td>لوريم إيبسوم(Lorem Ipsum)</td>
+                        <td>foo</td>
+                    </tr>
+                    <tr>
+                        <td>لوريم إيبسوم(Lorem Ipsum)</td>
+                        <td>لوريم إيبسوم(Lorem Ipsum)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- ############################################################################### -->
+
+            <div
+                dir="auto"
+                style="background-color: deepskyblue; padding: 10px"
+            >
+                لوريم إيبسوم(Lorem Ipsum)
+                <h1>
+                    dir="auto" у родителя и есть "сильный" потомок с арабскими
+                    символами на первом месте
+                </h1>
+                <hr />
+                <h2>Textarea</h2>
+                <textarea rows="10" cols="60">
+لوريم إيبسوم(Lorem Ipsum)
+просто текст на русском</textarea
+                >
+                <h2>Input</h2>
+                <input
+                    type="text"
+                    style="width: 1000px"
+                    value="لوريم إيبسوم(Lorem Ipsum)"
+                />
+                <h2>Div</h2>
+                <div>لوريم إيبسوم(Lorem Ipsum)</div>
+                <h2>Span</h2>
+                <span>لوريم إيبسوم(Lorem Ipsum)</span>
+                <h2>Table</h2>
+                <table border="1" style="width: 800px">
+                    <tr>
+                        <td>foo</td>
+                        <td>لوريم إيبسوم(Lorem Ipsum)</td>
+                    </tr>
+                    <tr>
+                        <td>لوريم إيبسوم(Lorem Ipsum)</td>
+                        <td>foo</td>
+                    </tr>
+                    <tr>
+                        <td>لوريم إيبسوم(Lorem Ipsum)</td>
+                        <td>لوريم إيبسوم(Lorem Ipsum)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- ############################################################################### -->
+
+            <div style="background-color: cadetblue; padding: 10px">
+                <h1>
+                    dir="auto" у каждого отдельного HTML тега с
+                    пользовательскими данными
+                </h1>
+                <hr />
+                <h2>Textarea</h2>
+                <textarea dir="auto" rows="10" cols="60">
+لوريم إيبسوم(Lorem Ipsum)
+просто текст на русском</textarea
+                >
+                <h2>Input</h2>
+                <input
+                    dir="auto"
+                    type="text"
+                    style="width: 1000px"
+                    value="لوريم إيبسوم(Lorem Ipsum)"
+                />
+                <h2>Div</h2>
+                <div dir="auto">لوريم إيبسوم(Lorem Ipsum)</div>
+                <h2>Span</h2>
+                <span dir="auto">لوريم إيبسوم(Lorem Ipsum)</span>
+                <h2>Table</h2>
+                <table border="1" style="width: 800px">
+                    <tr>
+                        <td dir="auto">foo</td>
+                        <td dir="auto">لوريم إيبسوم(Lorem Ipsum)</td>
+                    </tr>
+                    <tr>
+                        <td dir="auto">لوريم إيبسوم(Lorem Ipsum)</td>
+                        <td dir="auto">foo</td>
+                    </tr>
+                    <tr>
+                        <td dir="auto">لوريم إيبسوم(Lorem Ipsum)</td>
+                        <td dir="auto">لوريم إيبسوم(Lorem Ipsum)</td>
+                    </tr>
+                </table>
+                <h2>Table с "text-align: left"</h2>
+                <table border="1" style="width: 800px; text-align: left">
+                    <tr>
+                        <td dir="auto">foo</td>
+                        <td dir="auto">لوريم إيبسوم(Lorem Ipsum)</td>
+                    </tr>
+                    <tr>
+                        <td dir="auto">لوريم إيبسوم(Lorem Ipsum)</td>
+                        <td dir="auto">foo</td>
+                    </tr>
+                    <tr>
+                        <td dir="auto">لوريم إيبسوم(Lorem Ipsum)</td>
+                        <td dir="auto">لوريم إيبسوم(Lorem Ipsum)</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>
