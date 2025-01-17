@@ -50,3 +50,4 @@ Temporary Items
 *.xhtml
 
 # End of https://www.toptal.com/developers/gitignore/api/web,macos
+node_modules/

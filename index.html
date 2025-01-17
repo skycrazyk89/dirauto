@@ -219,6 +219,85 @@
                     </tr>
                 </table>
             </div>
+
+            <!-- ############################################################################### -->
+
+            <div style="background-color: burlywood; padding: 10px">
+                <h1>
+                    style="direction: rtl;" у каждого отдельного HTML тега с
+                    пользовательскими данными
+                </h1>
+                <hr />
+                <h2>Textarea</h2>
+                <textarea style="direction: rtl" rows="10" cols="60">
+لوريم إيبسوم(Lorem Ipsum)
+просто текст на русском</textarea
+                >
+                <h2>Input</h2>
+                <input
+                    style="direction: rtl; width: 1000px"
+                    type="text"
+                    value="لوريم إيبسوم(Lorem Ipsum)"
+                />
+                <h2>Div</h2>
+                <div style="direction: rtl">لوريم إيبسوم(Lorem Ipsum)</div>
+                <h2>Div + "text-align: left"</h2>
+                <div style="text-align: left; direction: rtl">
+                    لوريم إيبسوم(Lorem Ipsum)
+                </div>
+                <h2>Div первым идет не арабский</h2>
+                <div style="direction: rtl">
+                    Русский не арабский لوريم إيبسوم
+                </div>
+                <h2>Span</h2>
+                <span style="direction: rtl">لوريم إيبسوم(Lorem Ipsum)</span>
+                <h2>Table</h2>
+                <table border="1" style="width: 800px">
+                    <tr>
+                        <td style="direction: rtl">foo</td>
+                        <td style="direction: rtl">
+                            لوريم إيبسوم(Lorem Ipsum)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="direction: rtl">
+                            لوريم إيبسوم(Lorem Ipsum)
+                        </td>
+                        <td style="direction: rtl">foo</td>
+                    </tr>
+                    <tr>
+                        <td style="direction: rtl">
+                            لوريم إيبسوم(Lorem Ipsum)
+                        </td>
+                        <td style="direction: rtl">
+                            لوريم إيبسوم(Lorem Ipsum)
+                        </td>
+                    </tr>
+                </table>
+                <h2>Table + "text-align: left"</h2>
+                <table border="1" style="width: 800px; text-align: left">
+                    <tr>
+                        <td style="direction: rtl">foo</td>
+                        <td style="direction: rtl">
+                            لوريم إيبسوم(Lorem Ipsum)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="direction: rtl">
+                            لوريم إيبسوم(Lorem Ipsum)
+                        </td>
+                        <td style="direction: rtl">foo</td>
+                    </tr>
+                    <tr>
+                        <td style="direction: rtl">
+                            لوريم إيبسوم(Lorem Ipsum)
+                        </td>
+                        <td style="direction: rtl">
+                            لوريم إيبسوم(Lorem Ipsum)
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </main>
     </body>
 </html>
